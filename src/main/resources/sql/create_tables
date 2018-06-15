@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS vacancies;
+
+CREATE TABLE vacancies(
+  id BIGINT PRIMARY KEY,
+  vacancy_name VARCHAR(255) DEFAULT NULL,
+  company_name VARCHAR(255) DEFAULT NULL,
+  publish_date TIMESTAMP DEFAULT NULL,
+  payment_from BIGINT DEFAULT NULL,
+  payment_to BIGINT DEFAULT NULL,
+  currency VARCHAR(255) DEFAULT NULL,
+  url VARCHAR(255) DEFAULT NULL
+  );
+
+SELECT count(*) FROM vacancies;
+
+SELECT count(id) FROM vacancies;
